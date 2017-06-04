@@ -50,6 +50,11 @@ namespace MinderaCodeChallenge
 
         public static int[][] Group(int[] values, int groups)
         {
+            if(values == null || values.Length == 0 || groups < 1)
+            {
+                return new int[0][];
+            }
+
             var k = (values.Length > groups) ? groups : values.Length;
             var orderedValues = values.OrderBy(v => v);
 
@@ -92,7 +97,7 @@ namespace MinderaCodeChallenge
                 for (int j = 0; j < outerElements.Count; j++)
                 {
                     var closestCluster = GetClosestClusterIndex(kClusters, outerElements.ElementAt(j));
-                    if (closestCluster != i)
+                    if (closestCluster != i && closestCluster >= 0)
                     {
                         kClusters.ElementAt(closestCluster).Attach(outerElements.ElementAt(j));
                         outerElements.RemoveAt(j);
@@ -109,6 +114,10 @@ namespace MinderaCodeChallenge
         {
             int index = -1;
             double distance = double.MaxValue;
+            if(clusters == null)
+            {
+                return index;
+            }
             for (int i = 0; i < clusters.Count; i++)
             {
                 var d = clusters.ElementAt(i).GetCentroidDistance(value);
@@ -208,7 +217,12 @@ namespace MinderaCodeChallenge
 
         public void RecalculateCentroid()
         {
-            Centroid = Elements.Sum() / (double)Elements.Count;
+            var sum = 0;
+            foreach (var item in Elements)
+            {
+                sum += item;
+            }
+            Centroid = sum / (double)Elements.Count;
         }
 
         public double GetCentroidDistance(Cluster c) => Math.Abs(Centroid - c.Centroid);
