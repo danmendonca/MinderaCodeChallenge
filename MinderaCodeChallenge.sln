@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinderaCodeChallenge", "MinderaCodeChallenge\MinderaCodeChallenge.csproj", "{B2A63C8C-892D-402A-9E32-4B1377106C14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinderaCodeChallenge.Tests", "MinderaCodeChallenge.Tests\MinderaCodeChallenge.Tests.csproj", "{68D7BC21-FCBD-4ACE-866C-BB1E93D9F46D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A63C8C-892D-402A-9E32-4B1377106C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A63C8C-892D-402A-9E32-4B1377106C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A63C8C-892D-402A-9E32-4B1377106C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A63C8C-892D-402A-9E32-4B1377106C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D7BC21-FCBD-4ACE-866C-BB1E93D9F46D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D7BC21-FCBD-4ACE-866C-BB1E93D9F46D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D7BC21-FCBD-4ACE-866C-BB1E93D9F46D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D7BC21-FCBD-4ACE-866C-BB1E93D9F46D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
