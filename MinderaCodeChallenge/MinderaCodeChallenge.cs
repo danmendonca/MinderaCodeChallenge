@@ -22,23 +22,24 @@ namespace MinderaCodeChallenge
             Console.ReadKey();
         }
 
-        private static void PrintArrArr(int[][] arr1)
+        private static void PrintArrArr(int[][] matrix)
         {
             var sb = new StringBuilder();
             sb.Append(@"[");
-            for (int i = 0; i < arr1.Length; i++)
+            for (int i = 0; i < matrix.Length; i++)
             {
+                Array.Sort(matrix[i]);
                 sb.Append(@"[");
-                for (int j = 0; j < arr1[i].Length; j++)
+                for (int j = 0; j < matrix[i].Length; j++)
                 {
-                    sb.Append(arr1[i][j]);
-                    if(j!= arr1[i].Length - 1)
+                    sb.Append(matrix[i][j]);
+                    if(j!= matrix[i].Length - 1)
                     {
                         sb.Append(@", ");
                     }
                 }
                 sb.Append(@"]");
-                if (i != arr1.Length-1)
+                if (i != matrix.Length-1)
                 {
                     sb.Append($",{Environment.NewLine}");
                 }
@@ -56,14 +57,14 @@ namespace MinderaCodeChallenge
             }
 
             var k = (values.Length > groups) ? groups : values.Length;
-            var orderedValues = values.OrderBy(v => v);
+            Array.Sort(values);
 
             var clusters = new List<Cluster>();
-            var kClusters = new List<Cluster> { new Cluster(orderedValues.ElementAt(0)) };
+            var kClusters = new List<Cluster> { new Cluster(values.ElementAt(0)) };
 
-            for (int i = 1; i < orderedValues.Count(); i++)
+            for (int i = 1; i < values.Count(); i++)
             {
-                clusters.Add(new Cluster(orderedValues.ElementAt(i)));
+                clusters.Add(new Cluster(values.ElementAt(i)));
             }
 
             while (kClusters.Count < k)
@@ -79,7 +80,6 @@ namespace MinderaCodeChallenge
             for (int i = 0; i < kClusters.Count; i++)
             {
                 groupsArray[i] = kClusters.ElementAt(i).Elements.ToArray();
-                //Console.WriteLine(kClusters.ElementAt(i).ToString());
             }
 
             return groupsArray;
