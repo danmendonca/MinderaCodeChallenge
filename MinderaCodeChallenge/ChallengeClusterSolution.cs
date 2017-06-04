@@ -204,8 +204,18 @@ namespace MinderaCodeChallenge
             Centroid = sum / (double)Elements.Count;
         }
 
-        public double GetCentroidDistance(Cluster c) => Math.Abs(Centroid - c.Centroid);
-        public double GetCentroidDistance(int element) => Math.Abs(Centroid - element);
+        public double GetCentroidDistance(Cluster c) => Distance(Centroid, c.Centroid);
+
+        public double GetCentroidDistance(int element) => Distance(Centroid, element);
+
+        double Distance(double i, double j)
+        {
+            if ((i >= 0 && j >= 0) || (i <= 0 && j <= 0))
+            {
+                return Math.Abs(i - j);
+            }
+            return Math.Abs(i + j);
+        }
 
         public override string ToString()
         {
