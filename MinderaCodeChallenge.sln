@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinderaCodeChallenge", "MinderaCodeChallenge\MinderaCodeChallenge.csproj", "{B2A63C8C-892D-402A-9E32-4B1377106C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinderaCodeChallenge.Tests", "MinderaCodeChallenge.Tests\MinderaCodeChallenge.Tests.csproj", "{317F4DC7-0C42-405B-BF88-E5F16B6A2FD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinderaCodeChallenge.Tests1", "MinderaCodeChallenge.Tests1\MinderaCodeChallenge.Tests1.csproj", "{28E1BD1D-C145-48A5-A57F-98E36EDBFA21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{B2A63C8C-892D-402A-9E32-4B1377106C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A63C8C-892D-402A-9E32-4B1377106C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A63C8C-892D-402A-9E32-4B1377106C14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{317F4DC7-0C42-405B-BF88-E5F16B6A2FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{317F4DC7-0C42-405B-BF88-E5F16B6A2FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{317F4DC7-0C42-405B-BF88-E5F16B6A2FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{317F4DC7-0C42-405B-BF88-E5F16B6A2FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E1BD1D-C145-48A5-A57F-98E36EDBFA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E1BD1D-C145-48A5-A57F-98E36EDBFA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E1BD1D-C145-48A5-A57F-98E36EDBFA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E1BD1D-C145-48A5-A57F-98E36EDBFA21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
